@@ -1,0 +1,49 @@
+{
+  "name": "whetstone-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for U.S. public-records data: business registration (KYB) across 25 states, new business filings, federal watchlist screening (OFAC/BIS/State Dept), and federal awards (USAspending). Powered by the Whetstone actors on Apify.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "modelcontextprotocol",
+    "whetstone",
+    "kyb",
+    "ofac",
+    "sanctions-screening",
+    "business-search",
+    "public-records",
+    "compliance",
+    "due-diligence",
+    "usaspending",
+    "apify"
+  ],
+  "license": "MIT",
+  "homepage": "https://whetstonetools.com/company-check/",
+  "author": {
+    "name": "Whetstone Tools",
+    "email": "support@whetstonetools.com"
+  },
+  "type": "module",
+  "bin": {
+    "whetstone-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/node": "^20.14.0"
+  }
+}
