@@ -1,6 +1,6 @@
 {
   "name": "whetstone-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server for U.S. public-records data: business registration (KYB) across 25 states, new business filings, federal watchlist screening (OFAC/BIS/State Dept), and federal awards (USAspending). Powered by the Whetstone actors on Apify.",
   "keywords": [
     "mcp",
@@ -19,6 +19,13 @@
   ],
   "license": "MIT",
   "homepage": "https://whetstonetools.com/company-check/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whetstone-tools/whetstone-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/whetstone-tools/whetstone-mcp/issues"
+  },
   "author": {
     "name": "Whetstone Tools",
     "email": "support@whetstonetools.com"
