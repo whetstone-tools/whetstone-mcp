@@ -1,0 +1,21 @@
+# Smithery configuration for whetstone-mcp (https://smithery.ai/docs)
+# Lets Smithery run the server over stdio with the user's Apify token.
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+      - apifyToken
+    properties:
+      apifyToken:
+        type: string
+        title: Apify API Token
+        description: Your Apify API token (apify.com -> Settings -> API & Integrations). Runs bill to your Apify account under pay-per-result pricing.
+  commandFunction: |-
+    (config) => ({
+      command: 'node',
+      args: ['dist/index.js'],
+      env: { APIFY_TOKEN: config.apifyToken }
+    })
+  exampleConfig:
+    apifyToken: apify_api_xxxxxxxxxxxxxxxxxxxxxxxxxxxx
