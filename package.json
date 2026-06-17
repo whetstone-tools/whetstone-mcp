@@ -1,6 +1,7 @@
 {
   "name": "whetstone-mcp",
-  "version": "0.1.1",
+  "version": "0.1.2",
+  "mcpName": "io.github.whetstone-tools/whetstone-mcp",
   "description": "MCP server for U.S. public-records data: business registration (KYB) across 25 states, new business filings, federal watchlist screening (OFAC/BIS/State Dept), and federal awards (USAspending). Powered by the Whetstone actors on Apify.",
   "keywords": [
     "mcp",

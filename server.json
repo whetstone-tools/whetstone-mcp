@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.whetstone-tools/whetstone-mcp",
+  "description": "U.S. public-records: business registration (KYB), filings, watchlist screening, federal awards.",
+  "repository": {
+    "url": "https://github.com/whetstone-tools/whetstone-mcp",
+    "source": "github"
+  },
+  "version": "0.1.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "whetstone-mcp",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "Apify API token; actor runs bill to your Apify account (pay-per-result).",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true,
+          "name": "APIFY_TOKEN"
+        }
+      ]
+    }
+  ]
+}

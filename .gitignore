@@ -5,3 +5,5 @@ dist/
 package-lock.json
 _test-*.mjs
 .npmrc
+mcp-publisher.exe
+*.tar.gz
